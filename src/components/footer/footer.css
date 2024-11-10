@@ -1,0 +1,10 @@
+.footer_container {
+    flex: 1;
+    background-color: rgb(234, 234, 233);
+    display: flex;
+    justify-content: center;
+}
+
+#icon {
+    font-size: 15px;;
+}

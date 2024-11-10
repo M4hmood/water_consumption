@@ -1,0 +1,12 @@
+.app_container {
+    background-image: url(../public/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: -webkit-fill-available;
+    background-color: rgb(146 182 196);
+    display: flex;
+    flex-direction: column;
+}
+

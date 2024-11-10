@@ -1,0 +1,69 @@
+h1, h2 {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(12, 55, 107);
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'temperature waterUsage'
+        'temperature remaining';
+    gap: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.h1 { grid-area: header;}
+.temperature_container { grid-area: temperature; }
+.waterUsage_container { grid-area: waterUsage; }
+.remaining_container { grid-area: remaining; }
+
+.temperature_container, .waterUsage_container, .remaining_container {
+    height: 280px;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+.temperature_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature_gauge {
+    height: 300px;
+    width: 120px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.temperature_gauge svg, rect{
+    height: inherit;
+    width: 100%;
+    fill: none;
+}
+
+.waterUsage_container, .remaining_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
